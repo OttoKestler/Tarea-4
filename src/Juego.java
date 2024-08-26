@@ -45,11 +45,15 @@ public class Juego {
     }
     private void limpiarCartas(){
         for(Jugador jugador : jugadores){
-            jugador.borrarCartas();        }
+            jugador.borrarCartas();
+        }
     }
 
     public Juego(int numeroJugadores, int numeroRondas){
         this.jugadores = crearJugadores(numeroJugadores);
         this.numeroRondas = numeroRondas;
+    }
+
+    public void jugar() {
     }
 }
